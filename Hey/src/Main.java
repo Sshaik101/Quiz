@@ -1,3 +1,5 @@
+import java.util.*;
+
 @FunctionalInterface
 interface Square {
     int calculate(int x, int y);
@@ -5,7 +7,7 @@ interface Square {
 
 class Main {
     public static void main(String args[]) {
-
+        Scanner scan = new Scanner(System.in);
         Square s = ((int x, int y) -> {
             int a = 0;
             for (int i = x; i <= y; i++) {
@@ -13,8 +15,12 @@ class Main {
             }
             return a;  
         });
-
-        int ans = s.calculate(5, 25);  
+        System.out.print("What's your first number?");
+        int firstNum = scan.nextInt();
+        System.out.println();        
+        System.out.print("What's your second number?");
+        int secondNum = scan.nextInt();
+        int ans = s.calculate(firstNum, secondNum);  
         System.out.println(ans);  
     }
 }
