@@ -1,14 +1,14 @@
 import java.util.*;
 
 @FunctionalInterface
-interface Square {
+interface myInterface {
     int calculate(int x, int y);
 }
 
 class Main {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
-        Square s = ((int x, int y) -> {
+        myInterface s = ((int x, int y) -> {
             int a = 0;
             for (int i = x; i <= y; i++) {
                 a += i;  
