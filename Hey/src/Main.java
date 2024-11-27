@@ -11,16 +11,18 @@ class Main {
         myInterface s = ((int x, int y) -> {
             int a = 0;
             for (int i = x; i <= y; i++) {
-                a += i;  
+                a += i;
             }
-            return a;  
+            return a;
         });
         System.out.print("What's your first number?");
         int firstNum = scan.nextInt();
-        System.out.println();        
+        System.out.println();
         System.out.print("What's your second number?");
         int secondNum = scan.nextInt();
-        int ans = s.calculate(firstNum, secondNum);  
-        System.out.println(ans);  
+        int ans = s.calculate(firstNum, secondNum);
+        System.out.println(ans);
+//Sumaiya Shaik and Anika Thakur
+
     }
 }
